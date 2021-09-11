@@ -39,18 +39,18 @@ function Chats() {
     <div className="chats">
       <div className="chatsHeader">
         <a title="Profile Picture">
-          <Avatar
-            src={user.profilePic}
-            onClick={() => auth.signOut()}
-            className="chatsAvatar"
-          />
+          <Avatar src={user.profilePic} className="chatsAvatar" />
         </a>
         <div className="chatSearch">
           <SearchIcon className="chatsSearchIcon" />
           <input placeholder="Friends" type="text" />
         </div>
         <a title="Logout">
-          <ExitToAppIcon className="logoutIcon" alt="Logout" />
+          <ExitToAppIcon
+            className="logoutIcon"
+            alt="Logout"
+            onClick={() => auth.signOut()}
+          />
         </a>
       </div>
       <div className="chatsPosts">
