@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px;
+  padding: 12px 12px 12px 20px;
   border-bottom: 1px solid whitesmoke;
   cursor: pointer;
 }
@@ -12,24 +12,25 @@
 }
 
 .chatAvatar {
-  height: 35px !important;
-  width: 35px !important;
+  height: 40px !important;
+  width: 40px !important;
 }
 
 .chatReadIcon {
   color: #ed3b55;
+  font-size: 30px !important;
 }
 
 .chatInfo {
-  padding-left: 5px;
+  padding-left: 15px;
   flex: 1;
 }
 
 .chatInfo > h4 {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
 }
 
 .chatInfo > p {
-  font-size: 9px;
+  font-size: 11px;
 }

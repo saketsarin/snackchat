@@ -4,6 +4,7 @@ import { Button } from "@material-ui/core";
 import { useDispatch } from "react-redux";
 import { auth, provider } from "./firebase";
 import { login } from "./features/appSlice";
+import Logo from "./img/logo.svg";
 
 function Login() {
   const dispatch = useDispatch();
@@ -24,8 +25,8 @@ function Login() {
   return (
     <div className="login">
       <div className="loginContainer">
-        <img src="https://scx2.b-cdn.net/gfx/news/2017/1-snapchat.jpg" alt="" />
-        <Button variant="outlined" onClick={signIn}>
+        <img src={Logo} alt="" />
+        <Button className="loginBtn" onClick={signIn}>
           Sign In
         </Button>
       </div>

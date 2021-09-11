@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./css/Chats.css";
 import { Avatar } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
-import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import { auth, db } from "./firebase";
 import Chat from "./Chat";
 import { useDispatch, useSelector } from "react-redux";
@@ -38,16 +38,20 @@ function Chats() {
   return (
     <div className="chats">
       <div className="chatsHeader">
-        <Avatar
-          src={user.profilePic}
-          onClick={() => auth.signOut()}
-          className="chatsAvatar"
-        />
+        <a title="Profile Picture">
+          <Avatar
+            src={user.profilePic}
+            onClick={() => auth.signOut()}
+            className="chatsAvatar"
+          />
+        </a>
         <div className="chatSearch">
           <SearchIcon className="chatsSearchIcon" />
           <input placeholder="Friends" type="text" />
         </div>
-        <ChatBubbleIcon className="chatsChatIcon" />
+        <a title="Logout">
+          <ExitToAppIcon className="logoutIcon" alt="Logout" />
+        </a>
       </div>
       <div className="chatsPosts">
         {posts.map(

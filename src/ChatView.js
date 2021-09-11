@@ -25,7 +25,7 @@ function ChatView() {
       <div className="chatViewTimer">
         <CountdownCircleTimer
           isPlaying
-          duration={10}
+          duration={5}
           strokeWidth={6}
           size={50}
           colors={[

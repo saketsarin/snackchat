@@ -1,5 +1,5 @@
 .login {
-  background-color: #feff00;
+  background-color: #ffae00;
   display: grid;
   place-items: center;
   height: 100vh;
@@ -13,5 +13,23 @@
 
 .loginContainer > img {
   height: 300px;
+  width: 500px;
   object-fit: contain;
+}
+
+.loginBtn {
+  background-color: #1d1d1d !important;
+  border-radius: 20px !important;
+  color: white !important;
+  height: 45px !important;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  box-shadow: 0px 3px 3px 0px #000000bf; 
+}
+
+.loginBtn:hover {
+  background-color: #f0f0f0 !important;
+  color: black !important;
+  border-color: black !important;
+  /* box-shadow: 0px 3px 3px 0px #f0f0f0; */
 }

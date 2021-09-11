@@ -1,36 +1,38 @@
 .chats {
   position: relative;
-  height: 400px;
-  width: 250px;
+  height: 83vh;
+  width: 65vw;
 }
 
 .chatsHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #059ee0;
-  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #2f4858;
+  height: 10vh;
 }
 
 .chatsAvatar {
-  height: 25px !important;
-  width: 25px !important;
+  height: 40px !important;
+  width: 40px !important;
+  cursor: pointer;
 }
 
 .chatSearch {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex: 1;
-  padding-left: 5px;
+  padding-left: 15px;
 }
 
 .chatSearch > input {
   outline: none;
   background-color: transparent;
   border: none;
-  font-size: 12px;
+  font-size: 15px;
   flex: 1;
   color: white;
 }
@@ -42,17 +44,19 @@
 
 .chatsSearchIcon {
   color: white;
-  font-size: 13px !important;
+  font-size: 24px !important;
+  margin-right: 7px !important;
 }
 
-.chatsChatIcon {
+.logoutIcon {
   color: white;
-  font-size: 18px !important;
+  font-size: 24px !important;
+  cursor: pointer;
 }
 
 .chatsPosts {
   box-shadow: 1px -7px 7px -6px #00000070;
-  height: 359px;
+  height: 74vh;
   margin-top: -9px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -71,7 +75,7 @@
   background-color: white;
   border-radius: 200px;
   color: gray;
-  font-size: 40px !important;
+  font-size: 50px !important;
   cursor: pointer;
   bottom: 0;
   left: 50%;

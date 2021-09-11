@@ -7,8 +7,8 @@ import { useHistory } from "react-router-dom";
 import "./css/WebcamCapture.css";
 
 const videoConstraints = {
-  width: 250,
-  height: 400,
+  width: 1000,
+  height: 600,
   facingMode: "user",
 };
 
